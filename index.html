@@ -3,22 +3,125 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ClusterSplat research project page.">
-  <title>ClusterSplat</title>
-  <style>
-    body { margin: 0; color: #202124; background: #fff; font-family: system-ui, sans-serif; }
-    main { max-width: 720px; margin: 0 auto; padding: 100px 24px; text-align: center; }
-    h1 { margin: 0 0 24px; font-size: clamp(2.5rem, 8vw, 4rem); letter-spacing: -0.04em; }
-    p { color: #555; font-size: 1.125rem; line-height: 1.6; }
-    a { color: #1761b0; }
-    a:focus-visible { outline: 3px solid #1761b0; outline-offset: 4px; }
-  </style>
+  <meta name="description" content="ClusterSplat grounds language in 3D Gaussian Splatting through scene-adaptive semantic cluster selection.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ClusterSplat — NeurIPS 2026">
+  <meta property="og:description" content="Semantic Cluster Selection for 3D Visual Grounding in Gaussian Splatting.">
+  <meta property="og:url" content="https://jaesung8.github.io/clustersplat/">
+  <meta property="og:image" content="https://jaesung8.github.io/clustersplat/static/images/teaser.webp">
+  <title>ClusterSplat | NeurIPS 2026</title>
+  <link rel="icon" type="image/svg+xml" href="./static/images/favicon.svg">
+  <link rel="stylesheet" href="./static/css/site.css">
+  <script src="./static/js/site.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1>ClusterSplat</h1>
-    <p>Project page under preparation.</p>
-    <p>Paper, results, demos, and presentation materials will be added here.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="hero" id="top">
+    <p class="venue">NeurIPS 2026</p>
+    <h1><span class="project-name">ClusterSplat</span><span class="paper-title">Semantic Cluster Selection for 3D Visual Grounding in Gaussian Splatting</span></h1>
+    <p class="authors"><span class="author">Jaesung Lee</span> <span class="separator" aria-hidden="true">·</span> <span class="author">Hyeontaek Hwang</span> <span class="separator" aria-hidden="true">·</span> <span class="author">Gabriel Manalu</span> <span class="separator" aria-hidden="true">·</span> <span class="author">Daeyoung Kim</span></p>
+    <nav class="resource-links" aria-label="Project resources">
+      <a class="button primary" href="https://github.com/jaesung8/cluster-splat">Model code <span aria-hidden="true">↗</span></a>
+      <a class="button" href="#method">Method</a>
+      <a class="button" href="#results">Results</a>
+      <a class="button" href="#citation">BibTeX</a>
+    </nav>
+    <p class="lead">Ground a referring expression by <strong>selecting a coherent 3D cluster</strong>, with rendered 2D masks and an explicit set of target Gaussians.</p>
+  </header>
+  <main id="main">
+    <figure class="hero-figure wide">
+      <a class="figure-link" href="./static/figures/teaser.pdf" aria-label="Open the teaser figure as a PDF">
+        <img src="./static/images/teaser.webp" width="2400" height="1209" fetchpriority="high" alt="A bed with blue sheets is described relative to a white trash can. Primitive-level top-ratio filtering scatters the target, while scene-adaptive cluster selection isolates the bed coherently.">
+      </a>
+      <figcaption><strong>From score filtering to target selection.</strong> Instead of extracting a 3D object from unstable primitive-level relevance scores, ClusterSplat selects a scene-adaptive cluster conditioned on the referring expression.</figcaption>
+    </figure>
+
+    <section class="section text-section" id="abstract" aria-labelledby="abstract-heading">
+      <p class="eyebrow">The idea</p>
+      <h2 id="abstract-heading">Language grounding with explicit 3D targets</h2>
+      <p>3D visual grounding asks a referring expression to identify an object both in rendered views and in the 3D scene. Dense Gaussian relevance scores can change across scenes and prompts, making threshold or top-ratio selection sensitive to the chosen heuristic.</p>
+      <p>ClusterSplat reframes this task as selection over scene-adaptive candidates. It learns instance-aware Gaussian features, forms feature-aware seed voxels, and merges neighboring seeds when a description-length criterion improves. A query-conditioned scorer ranks the resulting clusters: the Top-1 cluster defines the explicit 3D target, while Gaussian-assigned cluster scores support differentiable 2D mask rendering.</p>
+    </section>
+
+    <section class="section wide" id="method" aria-labelledby="method-heading">
+      <div class="section-header"><p class="eyebrow">Method</p><h2 id="method-heading">Prepare the scene. Select the target.</h2><p>Scene structure is learned once; each referring expression conditions the cluster scorer.</p></div>
+      <figure>
+        <a class="figure-link" href="./static/figures/overview.pdf" aria-label="Open the method overview as a PDF">
+          <img src="./static/images/overview.webp" width="2400" height="1032" loading="lazy" alt="The four-stage pipeline learns instance-aware features from multi-view masks, builds scene-adaptive clusters, scores clusters using CLIP text tokens and attention, and produces an explicit 3D target together with a rendered 2D mask.">
+        </a>
+        <figcaption>Instance-aware feature learning and description-length merging create candidates. Query-conditioned scoring selects one 3D cluster; cluster logits assigned to the Gaussians are rendered to predict the 2D mask.</figcaption>
+      </figure>
+      <ol class="method-steps">
+        <li><span class="step-number">01</span><h3>Learn instance-aware features</h3><p>Multi-view mask supervision encourages Gaussians from the same instance to share features while separating different instances.</p></li>
+        <li><span class="step-number">02</span><h3>Build scene-adaptive candidates</h3><p>Feature-aware seed voxels merge under a description-length criterion. Each scene determines its own number of candidate clusters.</p></li>
+        <li><span class="step-number">03</span><h3>Ground the expression</h3><p>A text-conditioned scorer ranks the candidates. Top-1 selection defines the 3D target, and score rendering predicts the 2D mask.</p></li>
+      </ol>
+    </section>
+
+    <section class="section wide" id="results" aria-labelledby="results-heading">
+      <div class="section-header"><p class="eyebrow">Qualitative results</p><h2 id="results-heading">Rendered masks and 3D object selection</h2><p>Comparisons from the paper, using appearance and spatial descriptions to identify the target.</p></div>
+      <div class="result-block">
+        <h3>ScanRefer</h3>
+        <p>Each example pairs a rendered result with a top-down 3D view, showing both image-space localization and explicit target selection.</p>
+        <figure>
+          <a class="figure-link" href="./static/figures/scanrefer.pdf" aria-label="Open the ScanRefer comparison as a PDF">
+            <img src="./static/images/scanrefer.webp" width="2400" height="2761" loading="lazy" alt="Four ScanRefer examples compare ground truth, LangSplat, OpenGaussian, Dr.Splat, ReferSplat, and ClusterSplat for a trash can, a picture, a toilet, and a desk. Each row includes rendered masks and top-down 3D target selection.">
+          </a>
+          <figcaption>ScanRefer descriptions combine object appearance and spatial relations. In the 3D visualizations, selected target Gaussians are yellow and background Gaussians are blue. <a href="./static/figures/scanrefer.pdf">Open full-resolution figure ↗</a></figcaption>
+        </figure>
+      </div>
+      <div class="result-block">
+        <h3>Ref-LERF</h3>
+        <p>Fine-grained referring descriptions include attributes, surface cues, and relations to nearby objects.</p>
+        <figure>
+          <a class="figure-link" href="./static/figures/ref-lerf.pdf" aria-label="Open the Ref-LERF comparison as a PDF">
+            <img src="./static/images/ref-lerf.webp" width="2400" height="1535" loading="lazy" alt="Rendered-mask comparisons across figurines, teatime, kitchen, and ramen scenes for detailed text descriptions, including an object beside a rubber duck and sliced ingredients above ramen noodles.">
+          </a>
+          <figcaption>Rendered-mask comparisons across four Ref-LERF scenes. These examples evaluate 2D localization from detailed descriptions. <a href="./static/figures/ref-lerf.pdf">Open full-resolution figure ↗</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section wide" id="benchmarks" aria-labelledby="benchmarks-heading">
+      <div class="section-header"><p class="eyebrow">Quantitative results</p><h2 id="benchmarks-heading">Across referring and class-name queries</h2><p>Results reported in the manuscript. All values use a 0–100 scale; higher is better.</p></div>
+      <div class="benchmark-tabs" aria-label="Choose benchmark">
+        <a class="tab-button" href="#scanrefer-panel">ScanRefer</a>
+        <a class="tab-button" href="#scannet-panel">ScanNet v2</a>
+        <a class="tab-button" href="#reflerf-panel">Ref-LERF</a>
+      </div>
+      <div class="benchmark-panel" id="scanrefer-panel">
+        <h3>ScanRefer</h3>
+        <div class="table-scroll" role="region" aria-label="ScanRefer: referring-expression grounding across 10 scenes." tabindex="0"><table id="scanrefer-table"><caption>ScanRefer: referring-expression grounding across 10 scenes.</caption><thead><tr><th scope="col">Method</th><th scope="col">2D mIoU <span class="up" aria-label="higher is better">↑</span></th><th scope="col">2D mAcc@0.25 <span class="up" aria-label="higher is better">↑</span></th><th scope="col">3D mIoU <span class="up" aria-label="higher is better">↑</span></th><th scope="col">3D mAcc@0.25 <span class="up" aria-label="higher is better">↑</span></th></tr></thead><tbody><tr><th scope="row">LangSplat</th><td>11.00</td><td>13.41</td><td>5.81</td><td>4.95</td></tr><tr><th scope="row">OpenGaussian</th><td>18.48</td><td>5.53</td><td>1.06</td><td>0.10</td></tr><tr><th scope="row">Dr.Splat</th><td>19.01</td><td>27.76</td><td>9.48</td><td>11.17</td></tr><tr><th scope="row">ReferSplat</th><td>31.30</td><td>45.07</td><td>4.05</td><td>0.10</td></tr><tr><th scope="row">ReferSplat w/ our loss</th><td>31.55</td><td>45.99</td><td>3.85</td><td>0.00</td></tr><tr class="ours"><th scope="row">ClusterSplat</th><td><strong>39.44</strong></td><td><strong>53.66</strong></td><td><strong>21.28</strong></td><td><strong>39.02</strong></td></tr></tbody></table></div>
+      </div>
+      <div class="benchmark-panel" id="scannet-panel">
+        <h3>ScanNet v2</h3>
+        <div class="table-scroll" role="region" aria-label="ScanNet v2: class-name queries across the same 10 scenes." tabindex="0"><table id="scannet-table"><caption>ScanNet v2: class-name queries across the same 10 scenes.</caption><thead><tr><th scope="col">Method</th><th scope="col">2D mIoU <span class="up" aria-label="higher is better">↑</span></th><th scope="col">2D mAcc@0.25 <span class="up" aria-label="higher is better">↑</span></th><th scope="col">3D mIoU <span class="up" aria-label="higher is better">↑</span></th><th scope="col">3D mAcc <span class="up" aria-label="higher is better">↑</span></th></tr></thead><tbody><tr><th scope="row">LangSplat</th><td>27.67</td><td>40.82</td><td>2.01</td><td>8.13</td></tr><tr><th scope="row">OpenGaussian</th><td>19.55</td><td>26.11</td><td><strong>31.05</strong></td><td>46.39</td></tr><tr><th scope="row">Dr.Splat</th><td>19.94</td><td>32.64</td><td>30.67</td><td>46.12</td></tr><tr><th scope="row">ReferSplat</th><td>28.70</td><td>40.12</td><td>6.35</td><td>17.22</td></tr><tr><th scope="row">ReferSplat w/ our loss</th><td>32.70</td><td>47.32</td><td>4.52</td><td>12.89</td></tr><tr class="ours"><th scope="row">ClusterSplat</th><td><strong>42.20</strong></td><td><strong>58.30</strong></td><td>29.21</td><td><strong>46.60</strong></td></tr></tbody></table></div>
+      </div>
+      <div class="benchmark-panel" id="reflerf-panel">
+        <h3>Ref-LERF</h3>
+        <div class="table-scroll" role="region" aria-label="Ref-LERF: average rendered-mask scores across ramen, figurines, teatime, and kitchen." tabindex="0"><table id="reflerf-table"><caption>Ref-LERF: average rendered-mask scores across ramen, figurines, teatime, and kitchen.</caption><thead><tr><th scope="col">Method</th><th scope="col">2D mIoU <span class="up" aria-label="higher is better">↑</span></th><th scope="col">2D mAcc@0.25 <span class="up" aria-label="higher is better">↑</span></th></tr></thead><tbody><tr><th scope="row">LangSplat</th><td>11.27</td><td>15.79</td></tr><tr><th scope="row">OpenGaussian</th><td>11.83</td><td>18.29</td></tr><tr><th scope="row">Dr.Splat</th><td>5.78</td><td>6.41</td></tr><tr><th scope="row">ReferSplat</th><td>25.48</td><td>35.97</td></tr><tr><th scope="row">ReferSplat w/ our loss</th><td>26.59</td><td>36.35</td></tr><tr class="ours"><th scope="row">ClusterSplat</th><td><strong>31.14</strong></td><td><strong>41.70</strong></td></tr></tbody></table></div>
+      </div>
+      <p class="table-note">Bold values mark the best score in each column. ScanRefer and ScanNet v2 use a common set of 10 scenes; Ref-LERF uses four scenes. Score-based baselines use the best per-method top-ratio within 0.01–0.10 under the manuscript's oracle sweep; ClusterSplat selects the Top-1 cluster.</p>
+      <p class="table-note">ClusterSplat has the highest ScanRefer scores and Ref-LERF averages among the compared methods. On ScanNet v2 it leads the rendered 2D metrics and 3D matching accuracy; OpenGaussian has the higher 3D mIoU.</p>
+    </section>
+
+    <section class="section text-section" id="discussion" aria-labelledby="discussion-heading">
+      <p class="eyebrow">Scope</p><h2 id="discussion-heading">Candidate quality matters</h2>
+      <p>ClusterSplat selects one candidate for each referring expression. Over-merging can include nearby distractors, while fragmentation can leave part of an object outside the selected cluster. The quality of scene-adaptive candidates therefore limits the final target selection.</p>
+    </section>
+
+    <section class="section citation-section" id="citation" aria-labelledby="citation-heading">
+      <div class="citation-header"><h2 id="citation-heading">BibTeX</h2><button class="copy-button" type="button" hidden>Copy citation</button></div>
+      <pre><code id="bibtex">@inproceedings{lee2026clustersplat,
+  title     = {ClusterSplat: Semantic Cluster Selection for 3D Visual Grounding in Gaussian Splatting},
+  author    = {Lee, Jaesung and Hwang, Hyeontaek and Manalu, Gabriel and Kim, Daeyoung},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026},
+  url       = {https://jaesung8.github.io/clustersplat/}
+}</code></pre>
+      <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+    </section>
   </main>
+  <footer><p>ClusterSplat · NeurIPS 2026</p><a href="https://github.com/jaesung8/cluster-splat">Model code</a><span aria-hidden="true"> · </span><a href="https://github.com/jaesung8/clustersplat">Website source</a></footer>
 </body>
 </html>
