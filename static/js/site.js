@@ -26,6 +26,7 @@ tabs.forEach((tab, index) => {
     selectBenchmark(index);
   });
   tab.addEventListener("keydown", event => {
+    if (event.altKey || event.ctrlKey || event.metaKey) return;
     let next;
     if (event.key === "ArrowRight") next = (index + 1) % tabs.length;
     if (event.key === "ArrowLeft") next = (index + tabs.length - 1) % tabs.length;
