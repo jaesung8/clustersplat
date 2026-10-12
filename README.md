@@ -4,7 +4,7 @@
 NeurIPS 2026 · **Spotlight**
 
 - [Project page](https://jaesung8.github.io/clustersplat/)
-- [Model code](https://github.com/jaesung8/cluster-splat)
+- Model code: not publicly available.
 
 The page presents the research motivation, method overview, ScanRefer and
 Ref-LERF visual comparisons, and manuscript-reported results on ScanRefer,
