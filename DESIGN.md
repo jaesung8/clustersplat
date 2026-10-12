@@ -8,7 +8,9 @@ The manuscript is the content baseline; it is not treated as a camera-ready rele
 The initial placeholder contained no research assets or established design system.
 
 ## Brand
-ClusterSplat, NeurIPS 2026. Clear academic presentation with authentic research figures.
+ClusterSplat, NeurIPS 2026 Spotlight (confirmed by the author). Clear academic presentation with authentic research figures.
+A centered conference line sits directly below the title; Spotlight uses bold type in the existing blue accent.
+References: [LightGaussian](https://lightgaussian.github.io/) and [AsymGS](https://steveli88.github.io/AsymGS/).
 Avoid decorative stock imagery and unsupported performance claims.
 
 ## Product goals
@@ -21,7 +23,7 @@ Researchers comparing grounding methods; readers seeking a concise introduction;
 users seeking the implementation and citation.
 
 ## Information architecture
-Title/authors/resources → teaser → idea → method → qualitative comparisons →
+Title/Spotlight/authors/resources → teaser → idea → method → qualitative comparisons →
 benchmark tables → limitations → citation. Anchors are the navigation model.
 
 ## Design principles
