@@ -40,17 +40,3 @@ tabs.forEach((tab, index) => {
 });
 const linkedPanel = panels.findIndex(panel => `#${panel.id}` === window.location.hash);
 selectBenchmark(linkedPanel < 0 ? 0 : linkedPanel);
-
-const copyButton = document.querySelector(".copy-button");
-const copyStatus = document.querySelector("#copy-status");
-if (navigator.clipboard && window.isSecureContext) {
-  copyButton.hidden = false;
-  copyButton.addEventListener("click", async () => {
-    try {
-      await navigator.clipboard.writeText(document.querySelector("#bibtex").textContent);
-      copyStatus.textContent = "Citation copied.";
-    } catch {
-      copyStatus.textContent = "Copy was unavailable. Select the BibTeX text to copy it.";
-    }
-  });
-}

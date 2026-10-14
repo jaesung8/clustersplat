@@ -11,9 +11,9 @@
   <meta property="og:image" content="https://jaesung8.github.io/clustersplat/static/images/teaser.webp">
   <title>ClusterSplat | NeurIPS 2026 Spotlight</title>
   <link rel="icon" type="image/svg+xml" href="./static/images/favicon.svg">
-  <link rel="stylesheet" href="./static/css/site.css?v=20261014-publish">
-  <script src="./static/js/site.js?v=20261012-spotlight" defer></script>
-  <script src="./static/js/explorer.js?v=20261014-publish" defer></script>
+  <link rel="stylesheet" href="./static/css/site.css?v=20261014-single-explorer">
+  <script src="./static/js/site.js?v=20261014-single-explorer" defer></script>
+  <script src="./static/js/explorer.js?v=20261014-single-explorer" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -25,7 +25,6 @@
     <nav class="resource-links" aria-label="Project resources">
       <a class="button" href="#explore"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="m14 14 7 3.5-7 3.5z"/></svg><span>Explore examples</span></a>
       <span class="button resource-status"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-2-15-4 18"/></svg><span aria-hidden="true">Code <span class="release-note">Coming soon</span></span><span class="visually-hidden">Model code will be released soon</span></span>
-      <a class="button" href="#citation"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 3H6v6l-3 3 3 3v6h3m6-18h3v6l3 3-3 3v6h-3M10 12h4"/></svg><span>BibTeX</span></a>
     </nav>
     <nav class="section-links" aria-label="Research sections"><a href="#method">Method</a><span aria-hidden="true">·</span><a href="#results">Results</a></nav>
     <p class="lead">Ground a referring expression by <strong>selecting a coherent 3D cluster</strong>, with rendered 2D masks and an explicit set of target Gaussians.</p>
@@ -63,15 +62,9 @@
     <section class="section wide explorer" id="explore" aria-labelledby="explore-heading">
       <div class="section-header"><p class="eyebrow">Interactive examples</p><h2 id="explore-heading">Explore the grounding results</h2><p>Choose a description and inspect the target. Watch the target along a camera path, or compare matched results in Rendered 2D and 3D selection.</p></div>
       <noscript><p>The explorer needs JavaScript. <a href="#results">View the complete comparison figures below</a>.</p></noscript>
-      <div class="explorer-toolbar">
-        <div class="explorer-tabs" role="tablist" aria-label="Example collection">
-          <button type="button" id="comparison-tab" role="tab" aria-selected="true" aria-controls="comparison-panel">Explore results</button>
-          <button type="button" id="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" tabindex="-1">Explore scenes</button>
-        </div>
-      </div>
       <p id="explorer-status" class="explorer-status" role="status">Choose from the interactive examples when they have loaded, or view the complete figures below.</p>
       <button type="button" id="explorer-retry" class="explorer-retry" hidden>Retry loading examples</button>
-      <div id="comparison-panel" role="tabpanel" tabindex="0" aria-labelledby="comparison-tab">
+      <div id="comparison-panel">
         <h3 id="comparison-heading">Methods in motion</h3>
         <p class="explorer-intro" id="comparison-intro">Watch the scene and selected target along the camera path. Choose Rendered 2D or 3D selection to compare methods.</p>
         <fieldset class="explorer-controls" id="comparison-controls" disabled><legend class="visually-hidden">Choose a matched example</legend>
@@ -83,21 +76,6 @@
         <p id="comparison-status" class="explorer-status" role="status"></p>
         <div id="comparison-images" class="comparison-grid"></div>
         <p class="explorer-footnote" id="comparison-note" hidden>Click an image to inspect it at full size. <span id="comparison-provenance"></span> <a id="comparison-source" hidden>Open source figure PDF ↗</a></p>
-      </div>
-      <div id="demo-panel" role="tabpanel" tabindex="0" aria-labelledby="demo-tab" hidden>
-        <h3>Scene demonstrations</h3>
-        <p class="explorer-intro" id="demo-intro">Watch the scene and selected target along the camera path. Choose Image slider or Side by side to inspect individual captured views.</p>
-        <fieldset class="explorer-controls" id="demo-controls" disabled><legend class="visually-hidden">Choose a scene demonstration</legend>
-          <label>Scene<select id="demo-scene"></select></label>
-          <label class="explorer-description">Description<select id="demo-query" aria-describedby="demo-query-text"></select></label>
-          <label>Display<select id="demo-display"><option value="video">Video</option><option value="wipe">Image slider</option><option value="side">Side by side</option></select></label>
-        </fieldset>
-        <div class="explorer-query"><p id="demo-query-text"></p></div>
-        <div id="demo-views" class="explorer-views" role="group" aria-label="Captured camera views"></div>
-        <p id="demo-status" class="explorer-status" role="status"></p>
-        <div id="demo-images"></div>
-        <label id="demo-wipe-control" class="explorer-wipe-control" hidden>Reveal target highlight<input id="demo-wipe" type="range" min="0" max="100" value="50" aria-valuetext="50 percent target highlight"></label>
-        <p class="explorer-footnote" id="demo-note">Orange marks the selected target. Video shows the scene and target along the camera path.</p>
       </div>
     </section>
 
@@ -113,16 +91,6 @@
           <figcaption>ScanRefer descriptions combine object appearance and spatial relations. In the 3D visualizations, selected target Gaussians are yellow and background Gaussians are blue. <a href="./static/figures/scanrefer.pdf">Open full-resolution figure ↗</a></figcaption>
         </figure>
       </div>
-      <div class="result-block">
-        <h3>Ref-LERF</h3>
-        <p>Fine-grained referring descriptions include attributes, surface cues, and relations to nearby objects.</p>
-        <figure>
-          <a class="figure-link" href="./static/figures/ref-lerf.pdf" aria-label="Open the Ref-LERF comparison as a PDF">
-            <img src="./static/images/ref-lerf.webp" width="2400" height="1535" loading="lazy" alt="Rendered-mask comparisons across figurines, teatime, kitchen, and ramen scenes for detailed text descriptions, including an object beside a rubber duck and sliced ingredients above ramen noodles.">
-          </a>
-          <figcaption>Rendered-mask comparisons across four Ref-LERF scenes. These examples evaluate 2D localization from detailed descriptions. <a href="./static/figures/ref-lerf.pdf">Open full-resolution figure ↗</a></figcaption>
-        </figure>
-      </div>
     </section>
 
     <section class="section wide" id="benchmarks" aria-labelledby="benchmarks-heading">
@@ -130,7 +98,6 @@
       <div class="benchmark-tabs" aria-label="Choose benchmark">
         <a class="tab-button" href="#scanrefer-panel">ScanRefer</a>
         <a class="tab-button" href="#scannet-panel">ScanNet v2</a>
-        <a class="tab-button" href="#reflerf-panel">Ref-LERF</a>
       </div>
       <div class="benchmark-panel" id="scanrefer-panel">
         <h3>ScanRefer</h3>
@@ -140,12 +107,8 @@
         <h3>ScanNet v2</h3>
         <div class="table-scroll" role="region" aria-label="ScanNet v2: class-name queries across the same 10 scenes." tabindex="0"><table id="scannet-table"><caption>ScanNet v2: class-name queries across the same 10 scenes.</caption><thead><tr><th scope="col">Method</th><th scope="col">2D mIoU <span class="up" aria-label="higher is better">↑</span></th><th scope="col">2D mAcc@0.25 <span class="up" aria-label="higher is better">↑</span></th><th scope="col">3D mIoU <span class="up" aria-label="higher is better">↑</span></th><th scope="col">3D mAcc <span class="up" aria-label="higher is better">↑</span></th></tr></thead><tbody><tr><th scope="row">LangSplat</th><td>27.67</td><td>40.82</td><td>2.01</td><td>8.13</td></tr><tr><th scope="row">OpenGaussian</th><td>19.55</td><td>26.11</td><td><strong>31.05</strong></td><td>46.39</td></tr><tr><th scope="row">Dr.Splat</th><td>19.94</td><td>32.64</td><td>30.67</td><td>46.12</td></tr><tr><th scope="row">ReferSplat</th><td>28.70</td><td>40.12</td><td>6.35</td><td>17.22</td></tr><tr><th scope="row">ReferSplat w/ our loss</th><td>32.70</td><td>47.32</td><td>4.52</td><td>12.89</td></tr><tr class="ours"><th scope="row">ClusterSplat</th><td><strong>42.20</strong></td><td><strong>58.30</strong></td><td>29.21</td><td><strong>46.60</strong></td></tr></tbody></table></div>
       </div>
-      <div class="benchmark-panel" id="reflerf-panel">
-        <h3>Ref-LERF</h3>
-        <div class="table-scroll" role="region" aria-label="Ref-LERF: average rendered-mask scores across ramen, figurines, teatime, and kitchen." tabindex="0"><table id="reflerf-table"><caption>Ref-LERF: average rendered-mask scores across ramen, figurines, teatime, and kitchen.</caption><thead><tr><th scope="col">Method</th><th scope="col">2D mIoU <span class="up" aria-label="higher is better">↑</span></th><th scope="col">2D mAcc@0.25 <span class="up" aria-label="higher is better">↑</span></th></tr></thead><tbody><tr><th scope="row">LangSplat</th><td>11.27</td><td>15.79</td></tr><tr><th scope="row">OpenGaussian</th><td>11.83</td><td>18.29</td></tr><tr><th scope="row">Dr.Splat</th><td>5.78</td><td>6.41</td></tr><tr><th scope="row">ReferSplat</th><td>25.48</td><td>35.97</td></tr><tr><th scope="row">ReferSplat w/ our loss</th><td>26.59</td><td>36.35</td></tr><tr class="ours"><th scope="row">ClusterSplat</th><td><strong>31.14</strong></td><td><strong>41.70</strong></td></tr></tbody></table></div>
-      </div>
-      <p class="table-note">Bold values mark the best score in each column. ScanRefer and ScanNet v2 use a common set of 10 scenes; Ref-LERF uses four scenes. Score-based baselines use the best per-method top-ratio within 0.01–0.10 under the manuscript's oracle sweep; ClusterSplat selects the Top-1 cluster.</p>
-      <p class="table-note">ClusterSplat has the highest ScanRefer scores and Ref-LERF averages among the compared methods. On ScanNet v2 it leads the rendered 2D metrics and 3D matching accuracy; OpenGaussian has the higher 3D mIoU.</p>
+      <p class="table-note">Bold values mark the best score in each column. ScanRefer and ScanNet v2 use a common set of 10 scenes. Score-based baselines use the best per-method top-ratio within 0.01–0.10 under the manuscript's oracle sweep; ClusterSplat selects the Top-1 cluster.</p>
+      <p class="table-note">ClusterSplat has the highest ScanRefer scores among the compared methods. On ScanNet v2 it leads the rendered 2D metrics and 3D matching accuracy; OpenGaussian has the higher 3D mIoU.</p>
     </section>
 
     <section class="section text-section" id="discussion" aria-labelledby="discussion-heading">
@@ -153,17 +116,6 @@
       <p>ClusterSplat selects one candidate for each referring expression. Over-merging can include nearby distractors, while fragmentation can leave part of an object outside the selected cluster. The quality of scene-adaptive candidates therefore limits the final target selection.</p>
     </section>
 
-    <section class="section citation-section" id="citation" aria-labelledby="citation-heading">
-      <div class="citation-header"><h2 id="citation-heading">BibTeX</h2><button class="copy-button" type="button" hidden>Copy citation</button></div>
-      <pre><code id="bibtex">@inproceedings{lee2026clustersplat,
-  title     = {ClusterSplat: Semantic Cluster Selection for 3D Visual Grounding in Gaussian Splatting},
-  author    = {Lee, Jaesung and Hwang, Hyeontaek and Manalu, Gabriel and Kim, Daeyoung},
-  booktitle = {Advances in Neural Information Processing Systems},
-  year      = {2026},
-  url       = {https://jaesung8.github.io/clustersplat/}
-}</code></pre>
-      <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
-    </section>
   </main>
   <footer><p>ClusterSplat · NeurIPS 2026 Spotlight</p><span>Model code will be released soon</span><span aria-hidden="true"> · </span><a href="https://github.com/jaesung8/clustersplat">Website source</a></footer>
 </body>

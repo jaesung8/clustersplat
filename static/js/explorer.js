@@ -6,32 +6,9 @@
   const methods = { rgb: 'RGB', langsplat: 'LangSplat', opengaussian: 'OpenGaussian', drsplat: 'Dr.Splat', refersplat: 'ReferSplat', clustersplat: 'ClusterSplat' };
   let data;
   let comparisonVersion = 0;
-  let demoVersion = 0;
-  let viewIndex = 0;
   const videoPlayers = new Map();
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const english = value => value.en;
-  const tabs = [...root.querySelectorAll('[role="tab"]')];
-  function activateTab(tab) {
-    tabs.forEach(item => {
-      const active = item === tab;
-      item.setAttribute('aria-selected', String(active));
-      item.tabIndex = active ? 0 : -1;
-      get(item.getAttribute('aria-controls')).hidden = !active;
-    });
-    videoPlayers.forEach(player => player.sync());
-  }
-  tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => activateTab(tab));
-    tab.addEventListener('keydown', event => {
-      if (event.altKey || event.ctrlKey || event.metaKey) return;
-      let next;
-      if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') next = tabs[1 - index];
-      if (event.key === 'Home') next = tabs[0];
-      if (event.key === 'End') next = tabs[tabs.length - 1];
-      if (next) { event.preventDefault(); activateTab(next); next.focus(); }
-    });
-  });
   function options(select, entries, previous = select.value) {
     select.replaceChildren(...entries.map(([value, label]) => new Option(label, value)));
     if (entries.some(([value]) => value === previous)) select.value = previous;
@@ -233,131 +210,28 @@
       if (version === comparisonVersion) get('explorer-retry').hidden = false;
     } finally { if (version === comparisonVersion) grid.setAttribute('aria-busy', 'false'); }
   }
-  function currentDemo() { return data.demos.find(item => item.id === get('demo-scene').value); }
-  function demoChoices() {
-    options(get('demo-query'), currentDemo().queries.map(item => [item.id, english(item.text)]));
-    viewIndex = 0;
-  }
-  function updateWipe() {
-    const value = get('demo-wipe').value;
-    const image = root.querySelector('.highlight-image');
-    if (image) image.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
-    const divider = root.querySelector('.demo-wipe-divider');
-    if (divider) divider.style.left = `${value}%`;
-    get('demo-wipe').setAttribute('aria-valuetext', `${value} percent target highlight`);
-  }
-  async function renderDemo() {
-    const version = ++demoVersion;
-    const query = currentDemo().queries.find(item => item.id === get('demo-query').value);
-    const container = get('demo-images');
-    disposeVideo(container);
-    container.replaceChildren();
-    get('demo-wipe-control').hidden = true;
-    const isVideo = get('demo-display').value === 'video';
-    const views = get('demo-views');
-    views.hidden = isVideo;
-    const methodVideo = query?.video?.layout === 'methods';
-    get('demo-intro').textContent = isVideo && methodVideo ? methodVideoIntro : 'Watch the scene and selected target along the camera path. Choose Image slider or Side by side to inspect individual captured views.';
-    get('demo-note').textContent = isVideo ? (methodVideo ? 'All four panels share the same camera path. RGB shows the reconstructed scene at each interpolated pose.' : 'Orange marks the selected target. Video shows the scene and target along the camera path.') : 'Orange marks the selected target. Use the camera buttons to move between captured views.';
-    views.replaceChildren();
-    if (!query || !query.views.length) { get('demo-status').textContent = 'No captured views available for this description.'; return; }
-    viewIndex = Math.min(viewIndex, query.views.length - 1);
-    const view = query.views[viewIndex];
-    const text = english(query.text);
-    get('demo-query').title = text;
-    get('demo-query-text').textContent = text;
-    get('demo-query-text').lang = 'en';
-    if (isVideo) {
-      showVideo(container, query.video, get('demo-status'), () => {
-        get('demo-display').value = 'wipe';
-        renderDemo();
-        get('demo-display').focus();
-      }, text);
-      return;
-    }
-    function viewButton(label, index, active = false) {
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.textContent = label;
-      button.disabled = index < 0 || index >= query.views.length;
-      if (active) button.setAttribute('aria-pressed', 'true');
-      button.addEventListener('click', () => {
-        viewIndex = index;
-        renderDemo();
-        // Rendering replaces view buttons; retain keyboard focus on the selected view.
-        views.querySelector('[aria-pressed="true"]').focus();
-      });
-      return button;
-    }
-    views.append(viewButton('← Previous', viewIndex - 1));
-    query.views.forEach((item, index) => {
-      const button = viewButton(english(item.label), index, index === viewIndex);
-      button.setAttribute('aria-pressed', String(index === viewIndex));
-      button.lang = 'en';
-      views.append(button);
-    });
-    views.append(viewButton('Next →', viewIndex + 1));
-    get('demo-status').textContent = 'Loading captured view…';
-    container.setAttribute('aria-busy', 'true');
-    try {
-      const [rgb, highlight] = await Promise.all([loadImage(view.rgb, `RGB scene, ${english(view.label)}`), loadImage(view.highlight, `Orange target highlight: ${text}, ${english(view.label)}`)]);
-      if (version !== demoVersion) return;
-      if (get('demo-display').value === 'side') {
-        const side = document.createElement('div');
-        side.className = 'demo-side';
-        side.append(card(rgb, 'RGB scene'), card(highlight, 'ClusterSplat target', true));
-        container.append(side);
-      } else {
-        const wipe = document.createElement('div');
-        wipe.className = 'demo-wipe';
-        highlight.className = 'highlight-image';
-        const divider = document.createElement('span');
-        divider.className = 'demo-wipe-divider';
-        divider.setAttribute('aria-hidden', 'true');
-        wipe.append(rgb, highlight, divider);
-        const labels = document.createElement('div');
-        labels.className = 'demo-wipe-labels';
-        for (const label of ['Target highlight', 'RGB scene']) { const span = document.createElement('span'); span.textContent = label; labels.append(span); }
-        container.append(wipe, labels);
-        get('demo-wipe-control').hidden = false;
-        updateWipe();
-      }
-      get('demo-status').textContent = '';
-    } catch {
-      if (version === demoVersion) {
-        get('demo-status').textContent = 'This captured view could not be loaded. Select another view or retry loading examples.';
-        get('explorer-retry').hidden = false;
-      }
-    } finally { if (version === demoVersion) container.setAttribute('aria-busy', 'false'); }
-  }
   function populate() {
     options(get('comparison-scene'), [...new Set(data.comparisons.map(item => item.sceneId))].map(id => [id, id]));
     comparisonChoices();
-    options(get('demo-scene'), data.demos.map(item => [item.id, `${english(item.title)} · ${item.sceneId}`]));
-    if (data.demos.length) demoChoices();
-    for (const id of ['comparison-description', 'demo-scene', 'demo-query']) get(id).lang = 'en';
+    get('comparison-description').lang = 'en';
     renderComparison();
-    if (data.demos.length) renderDemo();
-    else get('demo-status').textContent = 'Scene demonstrations are not available yet. Explore the matched comparisons in the other tab.';
   }
   async function loadData() {
     get('explorer-status').textContent = 'Loading examples…';
     get('explorer-retry').hidden = true;
     get('comparison-controls').disabled = true;
-    get('demo-controls').disabled = true;
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 20000);
     try {
       const response = await fetch('./static/data/explorer.json?v=20261014-rgb-times', { signal: controller.signal });
       if (!response.ok) throw new Error('Manifest unavailable');
       const manifest = await response.json();
-      if (manifest.version !== 1 || !Array.isArray(manifest.comparisons) || !Array.isArray(manifest.demos)) throw new Error('Unsupported manifest');
+      if (manifest.version !== 1 || !Array.isArray(manifest.comparisons)) throw new Error('Unsupported manifest');
       data = manifest;
       populate();
       get('comparison-controls').disabled = !data.comparisons.length;
-      get('demo-controls').disabled = !data.demos.length;
       const sceneCount = new Set(data.comparisons.map(item => item.sceneId)).size;
-      get('explorer-status').textContent = `${data.comparisons.length} examples across ${sceneCount} scenes · ${data.demos.length} scene galleries`;
+      get('explorer-status').textContent = `${data.comparisons.length} examples across ${sceneCount} scenes`;
     } catch {
       get('explorer-status').textContent = 'Examples could not be loaded. Retry or view the full comparison figures below.';
       get('explorer-retry').hidden = false;
@@ -365,10 +239,6 @@
   }
   get('comparison-scene').addEventListener('change', () => { comparisonChoices(); renderComparison(); });
   for (const id of ['comparison-description', 'comparison-representation']) get(id).addEventListener('change', renderComparison);
-  get('demo-scene').addEventListener('change', () => { demoChoices(); renderDemo(); });
-  get('demo-query').addEventListener('change', () => { viewIndex = 0; renderDemo(); });
-  get('demo-display').addEventListener('change', renderDemo);
-  get('demo-wipe').addEventListener('input', updateWipe);
   get('explorer-retry').addEventListener('click', loadData);
   loadData();
 })();

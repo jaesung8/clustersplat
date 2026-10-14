@@ -6,11 +6,11 @@ NeurIPS 2026 · **Spotlight**
 - [Project page](https://jaesung8.github.io/clustersplat/)
 - Model code will be released soon.
 
-The page presents the research motivation, method overview, ScanRefer and
-Ref-LERF visual comparisons, and manuscript-reported results on ScanRefer,
-ScanNet v2, and Ref-LERF.
+The page presents the research motivation, method overview, ScanRefer visual
+comparisons, and manuscript-reported results on ScanRefer and ScanNet v2.
 
-The interactive explorer opens with synchronized four-panel videos: RGB
+One explorer provides scene, description, and representation controls. It opens
+with synchronized four-panel videos: RGB
 and Dr.Splat above ReferSplat and ClusterSplat. Orange highlights each method’s
 3D target selection along the same interpolated camera path. RGB shows the
 reconstructed scene at each interpolated pose. Choose Rendered 2D or 3D
@@ -19,8 +19,7 @@ outputs. Still comparisons always display RGB, Dr.Splat, ReferSplat,
 and ClusterSplat together.
 Rendered 2D uses the original captured RGB image. The 3D RGB reference uses
 native scene colors in the same top-view projection as the selection panels.
-Scene demonstrations also offer captured views with a target-highlight slider
-or side-by-side images. Videos have native playback controls and respect reduced
+Videos have native playback controls and respect reduced
 motion preferences; still images remain available if a video cannot load. Descriptions use the original English expressions.
 All examples use precomputed results.
 
@@ -34,6 +33,4 @@ spacing. The page and descriptions are English throughout.
 
 Figures and benchmark results follow `neurips2026/main.tex` and its source tables.
 Manuscript comparisons link to their full-resolution source figures; precomputed
-comparisons show their source information when provided. Scene demonstrations
-also retain RGB/ClusterSplat captured-view sliders and side-by-side stills,
-separately from benchmark evidence.
+comparisons show their source information when provided.

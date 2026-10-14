@@ -15,7 +15,7 @@ Avoid decorative stock imagery and unsupported performance claims.
 
 ## Product goals
 Explain cluster-level target selection and let readers inspect methods, results,
-available resources, and citation. Lead with synchronized four-panel videos, then let readers compare matched examples from manuscript figures and precomputed results and inspect precomputed scene views. Success: correct source-derived content, readable figures, responsive keyboard-accessible controls, and no result mixing while images load.
+available resources. Lead with synchronized four-panel videos, then let readers compare matched examples from manuscript figures and precomputed results and inspect precomputed scene views. Success: correct source-derived content, readable figures, responsive keyboard-accessible controls, and no result mixing while images load.
 Non-goals: browser model inference, internal review notes, installation/hosting guidance.
 
 ## Personas and jobs
@@ -24,7 +24,7 @@ users seeking the implementation and citation.
 
 ## Information architecture
 Title/authors/affiliation/Spotlight/resources → teaser → idea → method → interactive examples → qualitative comparisons →
-benchmark tables → limitations → citation. Anchors are the navigation model.
+benchmark tables → limitations. Anchors are the navigation model.
 
 ## Design principles
 Lead with the visual distinction; keep 2D mask rendering and Top-1 3D selection
@@ -37,11 +37,29 @@ Scientific imagery is rendered from original PDFs, with downloadable figure PDFs
 
 ## Components
 Hero, resource buttons, figure/caption, three method steps, benchmark tabs,
-semantic tables, citation block. Dark rounded resource pills link to examples and BibTeX; a non-interactive Code / Coming soon pill announces the forthcoming model release. Method and Results use secondary text navigation. The explorer has Explore results and Explore scenes tabs, scene/description selectors, using the original English expressions. Video is the default representation in both tabs: a single silent 2×2 movie shows RGB (top left), Dr.Splat (top right), ReferSplat (bottom left), and ClusterSplat (bottom right) along the same interpolated camera path. Orange marks each method’s 3D target selection; RGB shows the reconstructed scene at each interpolated pose. Rendered 2D and 3D selection expose matched method comparisons; captured stills offer an image slider and side-by-side alternative. Still comparisons always require RGB, Dr.Splat, ReferSplat, and ClusterSplat in that order; a missing asset reports an incomplete comparison instead of dropping a method. There is no baseline selector. Four cards become two columns on tablets and one on phones. Source figure PDFs appear only when provided; newly precomputed comparisons may show a provenance label or source link. Method videos use the manifest layout `methods`, a 5:4 mosaic with Times New Roman method labels embedded in each panel. Visible method/video captions use Times New Roman with Times and serif fallbacks. Legacy movies without this layout retain the RGB/ClusterSplat pair captions and 8:3 reserved ratio until replacement assets are ready. CSS variables in `static/css/site.css` own tokens.
+and semantic tables. Dark rounded resource pills link to examples; a
+non-interactive Code / Coming soon pill announces the forthcoming model release.
+Method and Results use secondary text navigation. Citation and its resource
+button are withheld until an arXiv entry is available. Ref-LERF figures, tables,
+and related claims are excluded from the current public page.
+
+One explorer offers scene, original English description, and representation
+selectors for 41 matched examples across seven scenes. There are no separate
+results/scenes tabs or a secondary scene gallery. Video is the default:
+a silent 2×2 movie shows RGB (top left), Dr.Splat (top right), ReferSplat
+(bottom left), and ClusterSplat (bottom right) along the same interpolated
+camera path. Orange marks each method’s selected 3D target; RGB shows the
+reconstructed scene at each pose. Rendered 2D and 3D selection always display
+RGB and the three methods together; missing assets report an incomplete
+comparison. Four cards become two columns on tablets and one on phones.
+Source PDFs appear only when provided. Movies use layout `methods` and a 5:4
+mosaic with Times New Roman labels embedded within each panel, without an
+additional caption above the movie. CSS variables in `static/css/site.css`
+own tokens.
 
 ## Accessibility
 Semantic landmarks/headings, skip link, descriptive image alt text, visible focus,
-keyboard tabs, scoped table headers, horizontally scrollable tables, polite copy status.
+keyboard-accessible controls, scoped table headers, horizontally scrollable tables.
 Respect reduced-motion preferences. Figure PDFs provide vector-resolution inspection.
 
 ## Responsive behavior
@@ -52,20 +70,19 @@ so all four panels can be viewed together on desktop. Their width stays within
 the content area on phones.
 
 ## Interaction states
-All benchmark tables are visible without JavaScript. With JavaScript, dataset tabs
-show one panel. Citation copy is shown only when a secure clipboard API is available;
-permission failure provides selectable-text guidance.
+Both benchmark tables are visible without JavaScript. With JavaScript, ScanRefer
+and ScanNet v2 dataset tabs show one panel at a time.
 
-Explorer controls stay disabled until the manifest loads. Fetch/image failures show a retry path and retain the full figures as a fallback. Matched images appear together only after decoding; generation counters discard obsolete selections. The no-JavaScript message links to the full figures. Camera buttons preserve keyboard focus and show the selected captured view; they and the wipe range are hidden in video mode. Native video controls support manual playback, with muted looping inline playback only for an active visible player when reduced motion is not requested. Hidden/offscreen movies pause; replaced players release their media and observers. Missing, failed, or timed-out video loads offer a still-image fallback. Descriptions retain their original English wording in both dropdown options and the full query below; no translation selector is shown. Dropdowns stay within their responsive column, with the full selected expression available below and in a tooltip.
+Explorer controls stay disabled until the manifest loads. Fetch/image failures show a retry path and retain the full figures as a fallback. Matched images appear together only after decoding; generation counters discard obsolete selections. The no-JavaScript message links to the full figures. Native video controls support manual playback, with muted looping inline playback only for an active visible player when reduced motion is not requested. Hidden/offscreen movies pause; replaced players release their media and observers. Missing, failed, or timed-out video loads offer a still-image fallback. Descriptions retain their original English wording in both dropdown options and the full query below; no translation selector is shown. Dropdowns stay within their responsive column, with the full selected expression available below and in a tooltip.
 
 ## Content voice
 English, precise and short, with original English expressions for descriptions and English titles, categories, and camera labels. Explain the research rather than the website implementation.
-Call quantitative values results reported in the manuscript, not current-code reruns. Distinguish manuscript-derived figures, precomputed matched comparisons, and scene demonstrations through source information. Do not expose checkpoint selection labels.
+Call quantitative values results reported in the manuscript, not current-code reruns. Distinguish manuscript-derived figures, precomputed matched comparisons through source information. Do not expose checkpoint selection labels.
 
 ## Implementation constraints
 Plain HTML/CSS/JavaScript, no dependencies or build tooling. Relative asset paths
 support project Pages. Check assets, source metrics, keyboard interaction, and mobile layout.
-The explorer reads `static/data/explorer.json` and precomputed images/videos using relative URLs. Video paths and posters are provided per comparison and per scene query. Model inference stays offline. Keep README focused on research content and available interactions.
+The explorer reads `static/data/explorer.json` and precomputed images/videos using relative URLs. Video paths and posters are provided per comparison. Model inference stays offline. Keep README focused on research content and available interactions.
 
 The expanded collection contains 41 comparisons across seven ScanRefer scenes:
 six distinct target objects per scene, with five in scene0200_00. Examples are
