@@ -11,21 +11,23 @@
   <meta property="og:image" content="https://jaesung8.github.io/clustersplat/static/images/teaser.webp">
   <title>ClusterSplat | NeurIPS 2026 Spotlight</title>
   <link rel="icon" type="image/svg+xml" href="./static/images/favicon.svg">
-  <link rel="stylesheet" href="./static/css/site.css?v=20261012-spotlight">
+  <link rel="stylesheet" href="./static/css/site.css?v=20261014-publish">
   <script src="./static/js/site.js?v=20261012-spotlight" defer></script>
+  <script src="./static/js/explorer.js?v=20261014-publish" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="hero" id="top">
     <h1><span class="project-name">ClusterSplat</span><span class="paper-title">Semantic Cluster Selection for 3D Visual Grounding in Gaussian Splatting</span></h1>
+    <p class="authors"><span class="author">Jaesung Lee,</span> <span class="author">Hyeontaek Hwang,</span> <span class="author">Gabriel Manalu,</span> <span class="author">Daeyoung Kim</span></p>
+    <p class="affiliation">School of Computing, KAIST</p>
     <p class="venue">NeurIPS 2026 <span aria-hidden="true">·</span> <strong>Spotlight</strong></p>
-    <p class="authors"><span class="author">Jaesung Lee</span> <span class="separator" aria-hidden="true">·</span> <span class="author">Hyeontaek Hwang</span> <span class="separator" aria-hidden="true">·</span> <span class="author">Gabriel Manalu</span> <span class="separator" aria-hidden="true">·</span> <span class="author">Daeyoung Kim</span></p>
     <nav class="resource-links" aria-label="Project resources">
-      <span class="button">Model code not public</span>
-      <a class="button" href="#method">Method</a>
-      <a class="button" href="#results">Results</a>
-      <a class="button" href="#citation">BibTeX</a>
+      <a class="button" href="#explore"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="m14 14 7 3.5-7 3.5z"/></svg><span>Explore examples</span></a>
+      <span class="button resource-status"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-2-15-4 18"/></svg><span aria-hidden="true">Code <span class="release-note">Coming soon</span></span><span class="visually-hidden">Model code will be released soon</span></span>
+      <a class="button" href="#citation"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 3H6v6l-3 3 3 3v6h3m6-18h3v6l3 3-3 3v6h-3M10 12h4"/></svg><span>BibTeX</span></a>
     </nav>
+    <nav class="section-links" aria-label="Research sections"><a href="#method">Method</a><span aria-hidden="true">·</span><a href="#results">Results</a></nav>
     <p class="lead">Ground a referring expression by <strong>selecting a coherent 3D cluster</strong>, with rendered 2D masks and an explicit set of target Gaussians.</p>
   </header>
   <main id="main">
@@ -56,6 +58,47 @@
         <li><span class="step-number">02</span><h3>Build scene-adaptive candidates</h3><p>Feature-aware seed voxels merge under a description-length criterion. Each scene determines its own number of candidate clusters.</p></li>
         <li><span class="step-number">03</span><h3>Ground the expression</h3><p>A text-conditioned scorer ranks the candidates. Top-1 selection defines the 3D target, and score rendering predicts the 2D mask.</p></li>
       </ol>
+    </section>
+
+    <section class="section wide explorer" id="explore" aria-labelledby="explore-heading">
+      <div class="section-header"><p class="eyebrow">Interactive examples</p><h2 id="explore-heading">Explore the grounding results</h2><p>Choose a description and inspect the target. Watch the target along a camera path, or compare matched results in Rendered 2D and 3D selection.</p></div>
+      <noscript><p>The explorer needs JavaScript. <a href="#results">View the complete comparison figures below</a>.</p></noscript>
+      <div class="explorer-toolbar">
+        <div class="explorer-tabs" role="tablist" aria-label="Example collection">
+          <button type="button" id="comparison-tab" role="tab" aria-selected="true" aria-controls="comparison-panel">Explore results</button>
+          <button type="button" id="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" tabindex="-1">Explore scenes</button>
+        </div>
+      </div>
+      <p id="explorer-status" class="explorer-status" role="status">Choose from the interactive examples when they have loaded, or view the complete figures below.</p>
+      <button type="button" id="explorer-retry" class="explorer-retry" hidden>Retry loading examples</button>
+      <div id="comparison-panel" role="tabpanel" tabindex="0" aria-labelledby="comparison-tab">
+        <h3 id="comparison-heading">Methods in motion</h3>
+        <p class="explorer-intro" id="comparison-intro">Watch the scene and selected target along the camera path. Choose Rendered 2D or 3D selection to compare methods.</p>
+        <fieldset class="explorer-controls" id="comparison-controls" disabled><legend class="visually-hidden">Choose a matched example</legend>
+          <label>Scene<select id="comparison-scene"></select></label>
+          <label class="explorer-description">Description<select id="comparison-description" aria-describedby="comparison-query"></select></label>
+          <label>Representation<select id="comparison-representation"><option value="video">Video</option><option value="rendered">Rendered 2D</option><option value="top">3D selection</option></select></label>
+        </fieldset>
+        <div class="explorer-query"><p id="comparison-category" class="eyebrow"></p><p id="comparison-query"></p></div>
+        <p id="comparison-status" class="explorer-status" role="status"></p>
+        <div id="comparison-images" class="comparison-grid"></div>
+        <p class="explorer-footnote" id="comparison-note" hidden>Click an image to inspect it at full size. <span id="comparison-provenance"></span> <a id="comparison-source" hidden>Open source figure PDF ↗</a></p>
+      </div>
+      <div id="demo-panel" role="tabpanel" tabindex="0" aria-labelledby="demo-tab" hidden>
+        <h3>Scene demonstrations</h3>
+        <p class="explorer-intro" id="demo-intro">Watch the scene and selected target along the camera path. Choose Image slider or Side by side to inspect individual captured views.</p>
+        <fieldset class="explorer-controls" id="demo-controls" disabled><legend class="visually-hidden">Choose a scene demonstration</legend>
+          <label>Scene<select id="demo-scene"></select></label>
+          <label class="explorer-description">Description<select id="demo-query" aria-describedby="demo-query-text"></select></label>
+          <label>Display<select id="demo-display"><option value="video">Video</option><option value="wipe">Image slider</option><option value="side">Side by side</option></select></label>
+        </fieldset>
+        <div class="explorer-query"><p id="demo-query-text"></p></div>
+        <div id="demo-views" class="explorer-views" role="group" aria-label="Captured camera views"></div>
+        <p id="demo-status" class="explorer-status" role="status"></p>
+        <div id="demo-images"></div>
+        <label id="demo-wipe-control" class="explorer-wipe-control" hidden>Reveal target highlight<input id="demo-wipe" type="range" min="0" max="100" value="50" aria-valuetext="50 percent target highlight"></label>
+        <p class="explorer-footnote" id="demo-note">Orange marks the selected target. Video shows the scene and target along the camera path.</p>
+      </div>
     </section>
 
     <section class="section wide" id="results" aria-labelledby="results-heading">
@@ -91,7 +134,7 @@
       </div>
       <div class="benchmark-panel" id="scanrefer-panel">
         <h3>ScanRefer</h3>
-        <div class="table-scroll" role="region" aria-label="ScanRefer: referring-expression grounding across 10 scenes." tabindex="0"><table id="scanrefer-table"><caption>ScanRefer: referring-expression grounding across 10 scenes.</caption><thead><tr><th scope="col">Method</th><th scope="col">2D mIoU <span class="up" aria-label="higher is better">↑</span></th><th scope="col">2D mAcc@0.25 <span class="up" aria-label="higher is better">↑</span></th><th scope="col">3D mIoU <span class="up" aria-label="higher is better">↑</span></th><th scope="col">3D mAcc@0.25 <span class="up" aria-label="higher is better">↑</span></th></tr></thead><tbody><tr><th scope="row">LangSplat</th><td>11.00</td><td>13.41</td><td>5.81</td><td>4.95</td></tr><tr><th scope="row">OpenGaussian</th><td>18.48</td><td>5.53</td><td>1.06</td><td>0.10</td></tr><tr><th scope="row">Dr.Splat</th><td>19.01</td><td>27.76</td><td>9.48</td><td>11.17</td></tr><tr><th scope="row">ReferSplat</th><td>31.30</td><td>45.07</td><td>4.05</td><td>0.10</td></tr><tr><th scope="row">ReferSplat w/ our loss</th><td>31.55</td><td>45.99</td><td>3.85</td><td>0.00</td></tr><tr class="ours"><th scope="row">ClusterSplat</th><td><strong>39.44</strong></td><td><strong>53.66</strong></td><td><strong>21.28</strong></td><td><strong>39.02</strong></td></tr></tbody></table></div>
+        <div class="table-scroll" role="region" aria-label="ScanRefer: referring-expression grounding across 10 scenes." tabindex="0"><table id="scanrefer-table"><caption>ScanRefer: referring-expression grounding across 10 scenes.</caption><thead><tr><th scope="col">Method</th><th scope="col">2D mIoU <span class="up" aria-label="higher is better">↑</span></th><th scope="col">2D mAcc@0.25 <span class="up" aria-label="higher is better">↑</span></th><th scope="col">3D mIoU <span class="up" aria-label="higher is better">↑</span></th><th scope="col">3D mAcc@0.25 <span class="up" aria-label="higher is better">↑</span></th></tr></thead><tbody><tr><th scope="row">LangSplat</th><td>11.00</td><td>13.41</td><td>5.81</td><td>4.95</td></tr><tr><th scope="row">OpenGaussian</th><td>18.48</td><td>5.53</td><td>1.06</td><td>0.10</td></tr><tr><th scope="row">Dr.Splat</th><td>19.01</td><td>27.76</td><td>9.48</td><td>11.17</td></tr><tr><th scope="row">ReferSplat</th><td>31.30</td><td>45.07</td><td>4.05</td><td>0.10</td></tr><tr><th scope="row">ReferSplat w/ our loss</th><td>31.55</td><td>45.99</td><td>3.85</td><td>0.00</td></tr><tr class="ours"><th scope="row">ClusterSplat</th><td><strong>39.72</strong></td><td><strong>54.35</strong></td><td><strong>23.33</strong></td><td><strong>43.38</strong></td></tr></tbody></table></div>
       </div>
       <div class="benchmark-panel" id="scannet-panel">
         <h3>ScanNet v2</h3>
@@ -122,6 +165,6 @@
       <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
     </section>
   </main>
-  <footer><p>ClusterSplat · NeurIPS 2026 Spotlight</p><span>Model code not public</span><span aria-hidden="true"> · </span><a href="https://github.com/jaesung8/clustersplat">Website source</a></footer>
+  <footer><p>ClusterSplat · NeurIPS 2026 Spotlight</p><span>Model code will be released soon</span><span aria-hidden="true"> · </span><a href="https://github.com/jaesung8/clustersplat">Website source</a></footer>
 </body>
 </html>

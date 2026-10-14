@@ -1,0 +1,1832 @@
+{
+  "version": 1,
+  "comparisons": [
+    {
+      "id": "scene0000_00-obj37-q103",
+      "sceneId": "scene0000_00",
+      "title": {
+        "en": "Large bed beside the guitar"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the large bed. the bed is next to the guitar."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0000_00-obj37-q103/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0000_00-obj37-q103/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0000_00-obj37-q103/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0000_00-obj37-q103/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0000_00-obj37-q103/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0000_00-obj37-q103/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0000_00-obj37-q103/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0000_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0000_00/scene0000_00-obj37-q103.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0000_00/scene0000_00-obj37-q103.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0000_00-obj36-q63",
+      "sceneId": "scene0000_00",
+      "title": {
+        "en": "Toilet in the corner"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the toilet is in the corner of the room. a washbasin is also present in the room."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0000_00-obj36-q63/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0000_00-obj36-q63/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0000_00-obj36-q63/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0000_00-obj36-q63/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0000_00-obj36-q63/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0000_00-obj36-q63/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0000_00-obj36-q63/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0000_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0000_00/scene0000_00-obj36-q63.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0000_00/scene0000_00-obj36-q63.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0000_00-obj30-q52",
+      "sceneId": "scene0000_00",
+      "title": {
+        "en": "Last wooden stool beside the wall"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "it is a wooden stool. the stool is in the kitchen behind the bar, it is the very last stool by the wall."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0000_00-obj30-q52/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0000_00-obj30-q52/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0000_00-obj30-q52/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0000_00-obj30-q52/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0000_00-obj30-q52/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0000_00-obj30-q52/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0000_00-obj30-q52/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0000_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0000_00/scene0000_00-obj30-q52.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0000_00/scene0000_00-obj30-q52.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0000_00-obj13-q76",
+      "sceneId": "scene0000_00",
+      "title": {
+        "en": "White bin right of the refrigerator"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "this is a white trash can. it is to the right of the refrigerator."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0000_00-obj13-q76/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0000_00-obj13-q76/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0000_00-obj13-q76/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0000_00-obj13-q76/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0000_00-obj13-q76/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0000_00-obj13-q76/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0000_00-obj13-q76/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0000_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0000_00/scene0000_00-obj13-q76.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0000_00/scene0000_00-obj13-q76.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0000_00-obj45-q75",
+      "sceneId": "scene0000_00",
+      "title": {
+        "en": "Toaster oven beside the refrigerator"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "this toster oven is in the right back corner of the white galley kitchen counter. it is up next to the full sized refrigerator which might block the view of it."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0000_00-obj45-q75/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0000_00-obj45-q75/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0000_00-obj45-q75/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0000_00-obj45-q75/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0000_00-obj45-q75/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0000_00-obj45-q75/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0000_00-obj45-q75/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0000_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0000_00/scene0000_00-obj45-q75.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0000_00/scene0000_00-obj45-q75.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0000_00-obj12-q123",
+      "sceneId": "scene0000_00",
+      "title": {
+        "en": "Lidless bin in front of the lidded bin"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "this is a trash can with no lid. it is in front of a trash can with a lid."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0000_00-obj12-q123/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0000_00-obj12-q123/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0000_00-obj12-q123/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0000_00-obj12-q123/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0000_00-obj12-q123/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0000_00-obj12-q123/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0000_00-obj12-q123/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0000_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0000_00/scene0000_00-obj12-q123.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0000_00/scene0000_00-obj12-q123.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0140_00-obj6-q99",
+      "sceneId": "scene0140_00",
+      "title": {
+        "en": "Gray chair right of the chair nearest the door"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the chair is to the right of the chair closes to the door that is next to two trash cans. the chair is gray and has five legs."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0140_00-obj6-q99/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0140_00-obj6-q99/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0140_00-obj6-q99/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0140_00-obj6-q99/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0140_00-obj6-q99/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0140_00-obj6-q99/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0140_00-obj6-q99/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0140_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0140_00/scene0140_00-obj6-q99.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0140_00/scene0140_00-obj6-q99.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0140_00-obj2-q14",
+      "sceneId": "scene0140_00",
+      "title": {
+        "en": "Brown cabinet left of the whiteboard"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "this is a brown cabinet. it is to the left of a whiteboard."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0140_00-obj2-q14/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0140_00-obj2-q14/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0140_00-obj2-q14/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0140_00-obj2-q14/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0140_00-obj2-q14/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0140_00-obj2-q14/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0140_00-obj2-q14/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0140_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0140_00/scene0140_00-obj2-q14.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0140_00/scene0140_00-obj2-q14.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0140_00-obj31-q105",
+      "sceneId": "scene0140_00",
+      "title": {
+        "en": "Second-closest bin to the door"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the trash can is the second closest one from the door. the trash can is black and looks rectangular."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0140_00-obj31-q105/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0140_00-obj31-q105/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0140_00-obj31-q105/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0140_00-obj31-q105/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0140_00-obj31-q105/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0140_00-obj31-q105/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0140_00-obj31-q105/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0140_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0140_00/scene0140_00-obj31-q105.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0140_00/scene0140_00-obj31-q105.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0140_00-obj43-q34",
+      "sceneId": "scene0140_00",
+      "title": {
+        "en": "Long picture above the chairs"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "this is a long picture. it is on the wall above chairs."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0140_00-obj43-q34/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0140_00-obj43-q34/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0140_00-obj43-q34/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0140_00-obj43-q34/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0140_00-obj43-q34/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0140_00-obj43-q34/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0140_00-obj43-q34/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0140_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0140_00/scene0140_00-obj43-q34.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0140_00/scene0140_00-obj43-q34.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0140_00-obj40-q46",
+      "sceneId": "scene0140_00",
+      "title": {
+        "en": "Room entrance door"
+      },
+      "category": {
+        "en": "Object description"
+      },
+      "query": {
+        "en": "this is a door. it allows access into and out of the room."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0140_00-obj40-q46/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0140_00-obj40-q46/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0140_00-obj40-q46/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0140_00-obj40-q46/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0140_00-obj40-q46/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0140_00-obj40-q46/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0140_00-obj40-q46/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0140_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0140_00/scene0140_00-obj40-q46.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0140_00/scene0140_00-obj40-q46.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0140_00-obj35-q35",
+      "sceneId": "scene0140_00",
+      "title": {
+        "en": "Long window above the bin"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "this is a long window. it is above a trash can."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0140_00-obj35-q35/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0140_00-obj35-q35/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0140_00-obj35-q35/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0140_00-obj35-q35/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0140_00-obj35-q35/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0140_00-obj35-q35/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0140_00-obj35-q35/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0140_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0140_00/scene0140_00-obj35-q35.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0140_00/scene0140_00-obj35-q35.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0200_00-obj12-q41",
+      "sceneId": "scene0200_00",
+      "title": {
+        "en": "Brown nightstand left of the bed"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the nightstand is to the left of the bed. the nightstand is a brown rectangle with four legs."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0200_00-obj12-q41/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0200_00-obj12-q41/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0200_00-obj12-q41/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0200_00-obj12-q41/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0200_00-obj12-q41/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0200_00-obj12-q41/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0200_00-obj12-q41/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0200_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0200_00/scene0200_00-obj12-q41.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0200_00/scene0200_00-obj12-q41.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0200_00-obj14-q9",
+      "sceneId": "scene0200_00",
+      "title": {
+        "en": "Wooden desk near the window"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "this is a wooden desk. the desk is kept close to window."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0200_00-obj14-q9/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0200_00-obj14-q9/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0200_00-obj14-q9/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0200_00-obj14-q9/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0200_00-obj14-q9/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0200_00-obj14-q9/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0200_00-obj14-q9/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0200_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0200_00/scene0200_00-obj14-q9.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0200_00/scene0200_00-obj14-q9.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0200_00-obj5-q20",
+      "sceneId": "scene0200_00",
+      "title": {
+        "en": "Cabinet opposite the bed"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the cabinet is on the wall opposite of the bed. the cabinet looks like a rectangular prism."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0200_00-obj5-q20/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0200_00-obj5-q20/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0200_00-obj5-q20/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0200_00-obj5-q20/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0200_00-obj5-q20/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0200_00-obj5-q20/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0200_00-obj5-q20/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0200_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0200_00/scene0200_00-obj5-q20.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0200_00/scene0200_00-obj5-q20.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0200_00-obj2-q29",
+      "sceneId": "scene0200_00",
+      "title": {
+        "en": "White radiator beside the shelf"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the item is a white radiator.  it is located in the corner next to a wood shelf."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0200_00-obj2-q29/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0200_00-obj2-q29/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0200_00-obj2-q29/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0200_00-obj2-q29/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0200_00-obj2-q29/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0200_00-obj2-q29/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0200_00-obj2-q29/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0200_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0200_00/scene0200_00-obj2-q29.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0200_00/scene0200_00-obj2-q29.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0200_00-obj9-q44",
+      "sceneId": "scene0200_00",
+      "title": {
+        "en": "White door right of the dresser"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the door is to the right of the dresser. the door is a white rectangle with a metal handle."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0200_00-obj9-q44/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0200_00-obj9-q44/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0200_00-obj9-q44/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0200_00-obj9-q44/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0200_00-obj9-q44/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0200_00-obj9-q44/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0200_00-obj9-q44/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0200_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0200_00/scene0200_00-obj9-q44.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0200_00/scene0200_00-obj9-q44.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0347_00-obj1-q9",
+      "sceneId": "scene0347_00",
+      "title": {
+        "en": "Bin near the back right corner"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the trash can is near the back right corner.  it is to the right of the fridge."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0347_00-obj1-q9/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0347_00-obj1-q9/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0347_00-obj1-q9/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0347_00-obj1-q9/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0347_00-obj1-q9/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0347_00-obj1-q9/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0347_00-obj1-q9/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0347_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0347_00/scene0347_00-obj1-q9.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0347_00/scene0347_00-obj1-q9.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0347_00-obj9-q20",
+      "sceneId": "scene0347_00",
+      "title": {
+        "en": "Blue bin behind the door"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "there is a blue trash can directly behind the door. it is to the right of the microwave."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0347_00-obj9-q20/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0347_00-obj9-q20/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0347_00-obj9-q20/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0347_00-obj9-q20/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0347_00-obj9-q20/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0347_00-obj9-q20/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0347_00-obj9-q20/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0347_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0347_00/scene0347_00-obj9-q20.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0347_00/scene0347_00-obj9-q20.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0347_00-obj16-q56",
+      "sceneId": "scene0347_00",
+      "title": {
+        "en": "Paper dispenser on the wall"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the paper dispenser. the dispenser is hung on the wall."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0347_00-obj16-q56/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0347_00-obj16-q56/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0347_00-obj16-q56/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0347_00-obj16-q56/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0347_00-obj16-q56/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0347_00-obj16-q56/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0347_00-obj16-q56/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0347_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0347_00/scene0347_00-obj16-q56.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0347_00/scene0347_00-obj16-q56.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0347_00-obj3-q48",
+      "sceneId": "scene0347_00",
+      "title": {
+        "en": "Rectangular door beside the refrigerator"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "there is a rectangular door. it is next to a refrigerator."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0347_00-obj3-q48/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0347_00-obj3-q48/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0347_00-obj3-q48/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0347_00-obj3-q48/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0347_00-obj3-q48/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0347_00-obj3-q48/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0347_00-obj3-q48/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0347_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0347_00/scene0347_00-obj3-q48.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0347_00/scene0347_00-obj3-q48.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0347_00-obj25-q2",
+      "sceneId": "scene0347_00",
+      "title": {
+        "en": "Silver coffee machine in the counter corner"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "there is a silver coffee machine. placed in the corner of the counter."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0347_00-obj25-q2/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0347_00-obj25-q2/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0347_00-obj25-q2/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0347_00-obj25-q2/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0347_00-obj25-q2/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0347_00-obj25-q2/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0347_00-obj25-q2/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0347_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0347_00/scene0347_00-obj25-q2.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0347_00/scene0347_00-obj25-q2.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0347_00-obj13-q21",
+      "sceneId": "scene0347_00",
+      "title": {
+        "en": "White microwave beside the toaster oven"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "there is a white microwave beside the toaster oven. it is on the last part of the counter, to the right."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0347_00-obj13-q21/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0347_00-obj13-q21/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0347_00-obj13-q21/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0347_00-obj13-q21/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0347_00-obj13-q21/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0347_00-obj13-q21/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0347_00-obj13-q21/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0347_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0347_00/scene0347_00-obj13-q21.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0347_00/scene0347_00-obj13-q21.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0400_00-obj21-q20",
+      "sceneId": "scene0400_00",
+      "title": {
+        "en": "Empty leftmost black storage bin"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "this is the leftmost black storage bin and is empty. it is facing the viewer."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0400_00-obj21-q20/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0400_00-obj21-q20/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0400_00-obj21-q20/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0400_00-obj21-q20/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0400_00-obj21-q20/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0400_00-obj21-q20/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0400_00-obj21-q20/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0400_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0400_00/scene0400_00-obj21-q20.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0400_00/scene0400_00-obj21-q20.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0400_00-obj0-q5",
+      "sceneId": "scene0400_00",
+      "title": {
+        "en": "Light brown desk beside the window"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "there is a light brown working desk placed next to the window."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0400_00-obj0-q5/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0400_00-obj0-q5/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0400_00-obj0-q5/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0400_00-obj0-q5/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0400_00-obj0-q5/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0400_00-obj0-q5/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0400_00-obj0-q5/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0400_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0400_00/scene0400_00-obj0-q5.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0400_00/scene0400_00-obj0-q5.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0400_00-obj9-q26",
+      "sceneId": "scene0400_00",
+      "title": {
+        "en": "Radiator behind the desk"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the object is a radiator. as you enter the room it would be directly behind the desk against the wall below the window."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0400_00-obj9-q26/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0400_00-obj9-q26/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0400_00-obj9-q26/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0400_00-obj9-q26/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0400_00-obj9-q26/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0400_00-obj9-q26/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0400_00-obj9-q26/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0400_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0400_00/scene0400_00-obj9-q26.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0400_00/scene0400_00-obj9-q26.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0400_00-obj2-q32",
+      "sceneId": "scene0400_00",
+      "title": {
+        "en": "Chair under the desk, right of four bins"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "a chair sits pulled under a desk. it's to the right of four trash cans."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0400_00-obj2-q32/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0400_00-obj2-q32/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0400_00-obj2-q32/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0400_00-obj2-q32/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0400_00-obj2-q32/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0400_00-obj2-q32/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0400_00-obj2-q32/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0400_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0400_00/scene0400_00-obj2-q32.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0400_00/scene0400_00-obj2-q32.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0400_00-obj1-q48",
+      "sceneId": "scene0400_00",
+      "title": {
+        "en": "Blue recycling bin on the right"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "this is the right side recycling bin. it is blue."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0400_00-obj1-q48/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0400_00-obj1-q48/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0400_00-obj1-q48/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0400_00-obj1-q48/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0400_00-obj1-q48/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0400_00-obj1-q48/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0400_00-obj1-q48/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0400_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0400_00/scene0400_00-obj1-q48.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0400_00/scene0400_00-obj1-q48.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0400_00-obj7-q57",
+      "sceneId": "scene0400_00",
+      "title": {
+        "en": "Dresser beneath the bed"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the dresser is underneath the bed. it is located to the right of the desk and chair."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0400_00-obj7-q57/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0400_00-obj7-q57/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0400_00-obj7-q57/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0400_00-obj7-q57/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0400_00-obj7-q57/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0400_00-obj7-q57/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0400_00-obj7-q57/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0400_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0400_00/scene0400_00-obj7-q57.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0400_00/scene0400_00-obj7-q57.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0590_00-obj48-q63",
+      "sceneId": "scene0590_00",
+      "title": {
+        "en": "Picture above the couch"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the picture is hanging above the couch. the couch is between the a lamp and the corner of the room."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0590_00-obj48-q63/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0590_00-obj48-q63/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0590_00-obj48-q63/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0590_00-obj48-q63/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0590_00-obj48-q63/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0590_00-obj48-q63/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0590_00-obj48-q63/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0590_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0590_00/scene0590_00-obj48-q63.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0590_00/scene0590_00-obj48-q63.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0590_00-obj12-q83",
+      "sceneId": "scene0590_00",
+      "title": {
+        "en": "Rectangular bed left of the lamp"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "there is a rectangular bed. it is to the left of a lamp."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0590_00-obj12-q83/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0590_00-obj12-q83/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0590_00-obj12-q83/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0590_00-obj12-q83/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0590_00-obj12-q83/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0590_00-obj12-q83/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0590_00-obj12-q83/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0590_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0590_00/scene0590_00-obj12-q83.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0590_00/scene0590_00-obj12-q83.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0590_00-obj56-q133",
+      "sceneId": "scene0590_00",
+      "title": {
+        "en": "Bin right of the cabinet"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "it is a trash can on the right side of a cabinet. it is directly facing a wardrobe ."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0590_00-obj56-q133/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0590_00-obj56-q133/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0590_00-obj56-q133/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0590_00-obj56-q133/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0590_00-obj56-q133/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0590_00-obj56-q133/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0590_00-obj56-q133/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0590_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0590_00/scene0590_00-obj56-q133.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0590_00/scene0590_00-obj56-q133.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0590_00-obj15-q121",
+      "sceneId": "scene0590_00",
+      "title": {
+        "en": "Chair under the desk on the room’s left"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the item is a chair. it would be found directly under the desk on the left side of the room."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0590_00-obj15-q121/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0590_00-obj15-q121/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0590_00-obj15-q121/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0590_00-obj15-q121/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0590_00-obj15-q121/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0590_00-obj15-q121/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0590_00-obj15-q121/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0590_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0590_00/scene0590_00-obj15-q121.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0590_00/scene0590_00-obj15-q121.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0590_00-obj3-q90",
+      "sceneId": "scene0590_00",
+      "title": {
+        "en": "Lamp with a white shade right of the bed"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "there is a lamp with a white shade. it is next to the bed on the right."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0590_00-obj3-q90/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0590_00-obj3-q90/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0590_00-obj3-q90/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0590_00-obj3-q90/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0590_00-obj3-q90/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0590_00-obj3-q90/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0590_00-obj3-q90/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0590_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0590_00/scene0590_00-obj3-q90.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0590_00/scene0590_00-obj3-q90.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0590_00-obj0-q61",
+      "sceneId": "scene0590_00",
+      "title": {
+        "en": "Table between two black office chairs"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the table is sitting against the wall between two black office chairs. if you are facing the tv the table is to the right of it."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0590_00-obj0-q61/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0590_00-obj0-q61/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0590_00-obj0-q61/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0590_00-obj0-q61/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0590_00-obj0-q61/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0590_00-obj0-q61/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0590_00-obj0-q61/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0590_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0590_00/scene0590_00-obj0-q61.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0590_00/scene0590_00-obj0-q61.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0645_00-obj22-q32",
+      "sceneId": "scene0645_00",
+      "title": {
+        "en": "Chair pulled away from the table"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the chair is facing the table to the left. the chair is slightly pulled away from the table."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0645_00-obj22-q32/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0645_00-obj22-q32/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0645_00-obj22-q32/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0645_00-obj22-q32/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0645_00-obj22-q32/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0645_00-obj22-q32/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0645_00-obj22-q32/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0645_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0645_00/scene0645_00-obj22-q32.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0645_00/scene0645_00-obj22-q32.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0645_00-obj20-q154",
+      "sceneId": "scene0645_00",
+      "title": {
+        "en": "Left bed near the bathroom"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the highlighted bed in the one on the left which is near the bathroom.  it is the one opposite side of the window.  it is located left side of the side table if you're facing the bed."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0645_00-obj20-q154/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0645_00-obj20-q154/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0645_00-obj20-q154/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0645_00-obj20-q154/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0645_00-obj20-q154/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0645_00-obj20-q154/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0645_00-obj20-q154/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0645_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0645_00/scene0645_00-obj20-q154.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0645_00/scene0645_00-obj20-q154.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0645_00-obj19-q185",
+      "sceneId": "scene0645_00",
+      "title": {
+        "en": "Round end table nearest the window"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the end table is the closest one to the window. the end table is a round cylinder."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0645_00-obj19-q185/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0645_00-obj19-q185/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0645_00-obj19-q185/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0645_00-obj19-q185/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0645_00-obj19-q185/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0645_00-obj19-q185/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0645_00-obj19-q185/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0645_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0645_00/scene0645_00-obj19-q185.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0645_00/scene0645_00-obj19-q185.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0645_00-obj32-q152",
+      "sceneId": "scene0645_00",
+      "title": {
+        "en": "Toilet between the sink and tub"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the toilet is to the left of the tub. the toilet is to the right of the sink."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0645_00-obj32-q152/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0645_00-obj32-q152/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0645_00-obj32-q152/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0645_00-obj32-q152/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0645_00-obj32-q152/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0645_00-obj32-q152/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0645_00-obj32-q152/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0645_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0645_00/scene0645_00-obj32-q152.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0645_00/scene0645_00-obj32-q152.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0645_00-obj58-q131",
+      "sceneId": "scene0645_00",
+      "title": {
+        "en": "Left picture above the bed"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "there is a picture above the bed. it is the one on the left."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0645_00-obj58-q131/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0645_00-obj58-q131/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0645_00-obj58-q131/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0645_00-obj58-q131/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0645_00-obj58-q131/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0645_00-obj58-q131/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0645_00-obj58-q131/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0645_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0645_00/scene0645_00-obj58-q131.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0645_00/scene0645_00-obj58-q131.webp",
+        "layout": "methods"
+      }
+    },
+    {
+      "id": "scene0645_00-obj31-q169",
+      "sceneId": "scene0645_00",
+      "title": {
+        "en": "Nightstand between two beds"
+      },
+      "category": {
+        "en": "Attribute and relation"
+      },
+      "query": {
+        "en": "the highlighted object is the nightstand that is in between the two beds in the room. there is a lamp in the middle of the nightstand. it is about the same height as the beds are."
+      },
+      "images": {
+        "rendered": {
+          "drsplat": "./static/examples/curated-comparisons/scene0645_00-obj31-q169/rendered-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0645_00-obj31-q169/rendered-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0645_00-obj31-q169/rendered-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/scene0645_00-obj31-q169/rendered-rgb.webp"
+        },
+        "top": {
+          "drsplat": "./static/examples/curated-comparisons/scene0645_00-obj31-q169/top-drsplat.webp",
+          "refersplat": "./static/examples/curated-comparisons/scene0645_00-obj31-q169/top-refersplat.webp",
+          "clustersplat": "./static/examples/curated-comparisons/scene0645_00-obj31-q169/top-clustersplat.webp",
+          "rgb": "./static/examples/curated-comparisons/rgb-scenes/scene0645_00/top-rgb.webp"
+        }
+      },
+      "provenance": {
+        "label": {
+          "en": "Selected for 3D target IoU advantage. Dr.Splat: top 3%; ReferSplat: top 1%; ClusterSplat: Top-1 cluster."
+        }
+      },
+      "sourceKind": "precomputed",
+      "video": {
+        "src": "./static/examples/method-videos-rgb/scene0645_00/scene0645_00-obj31-q169.mp4",
+        "poster": "./static/examples/method-videos-rgb/scene0645_00/scene0645_00-obj31-q169.webp",
+        "layout": "methods"
+      }
+    }
+  ],
+  "demos": [
+    {
+      "id": "scene0000_00",
+      "sceneId": "scene0000_00",
+      "title": {
+        "en": "Studio scene"
+      },
+      "queries": [
+        {
+          "id": "blue-bed",
+          "label": {
+            "en": "Bed with blue sheets beside the bin"
+          },
+          "text": {
+            "en": "this is a bed with blue sheets. it is to the left of a white trash can."
+          },
+          "views": [
+            {
+              "id": "view-1",
+              "label": {
+                "en": "View 1"
+              },
+              "rgb": "./static/examples/scenes/scene0000_00/blue-bed/view-1-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0000_00/blue-bed/view-1-highlight.webp"
+            },
+            {
+              "id": "view-2",
+              "label": {
+                "en": "View 2"
+              },
+              "rgb": "./static/examples/scenes/scene0000_00/blue-bed/view-2-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0000_00/blue-bed/view-2-highlight.webp"
+            },
+            {
+              "id": "view-3",
+              "label": {
+                "en": "View 3"
+              },
+              "rgb": "./static/examples/scenes/scene0000_00/blue-bed/view-3-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0000_00/blue-bed/view-3-highlight.webp"
+            }
+          ],
+          "video": {
+            "src": "./static/examples/method-videos-rgb/scene0000_00/blue-bed.mp4",
+            "poster": "./static/examples/method-videos-rgb/scene0000_00/blue-bed.webp",
+            "layout": "methods"
+          }
+        },
+        {
+          "id": "long-table",
+          "label": {
+            "en": "Long table facing four bar stools"
+          },
+          "text": {
+            "en": "this is a long table. it is facing four bar stools."
+          },
+          "views": [
+            {
+              "id": "view-1",
+              "label": {
+                "en": "View 1"
+              },
+              "rgb": "./static/examples/scenes/scene0000_00/long-table/view-1-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0000_00/long-table/view-1-highlight.webp"
+            },
+            {
+              "id": "view-2",
+              "label": {
+                "en": "View 2"
+              },
+              "rgb": "./static/examples/scenes/scene0000_00/long-table/view-2-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0000_00/long-table/view-2-highlight.webp"
+            },
+            {
+              "id": "view-3",
+              "label": {
+                "en": "View 3"
+              },
+              "rgb": "./static/examples/scenes/scene0000_00/long-table/view-3-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0000_00/long-table/view-3-highlight.webp"
+            }
+          ],
+          "video": {
+            "src": "./static/examples/method-videos-rgb/scene0000_00/long-table.mp4",
+            "poster": "./static/examples/method-videos-rgb/scene0000_00/long-table.webp",
+            "layout": "methods"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene0140_00",
+      "sceneId": "scene0140_00",
+      "title": {
+        "en": "Meeting room"
+      },
+      "queries": [
+        {
+          "id": "office-chair",
+          "label": {
+            "en": "Chair beneath the blue painting"
+          },
+          "text": {
+            "en": "the office chair is underneath the blue painting. the office chair has a slightly bent backside and five legs."
+          },
+          "views": [
+            {
+              "id": "view-1",
+              "label": {
+                "en": "View 1"
+              },
+              "rgb": "./static/examples/scenes/scene0140_00/office-chair/view-1-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0140_00/office-chair/view-1-highlight.webp"
+            },
+            {
+              "id": "view-2",
+              "label": {
+                "en": "View 2"
+              },
+              "rgb": "./static/examples/scenes/scene0140_00/office-chair/view-2-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0140_00/office-chair/view-2-highlight.webp"
+            },
+            {
+              "id": "view-3",
+              "label": {
+                "en": "View 3"
+              },
+              "rgb": "./static/examples/scenes/scene0140_00/office-chair/view-3-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0140_00/office-chair/view-3-highlight.webp"
+            }
+          ],
+          "video": {
+            "src": "./static/examples/method-videos-rgb/scene0140_00/office-chair.mp4",
+            "poster": "./static/examples/method-videos-rgb/scene0140_00/office-chair.webp",
+            "layout": "methods"
+          }
+        },
+        {
+          "id": "black-bin",
+          "label": {
+            "en": "Rectangular bin to the right of another bin"
+          },
+          "text": {
+            "en": "this is a rectangular trash can. it is to the right of another trash can."
+          },
+          "views": [
+            {
+              "id": "view-1",
+              "label": {
+                "en": "View 1"
+              },
+              "rgb": "./static/examples/scenes/scene0140_00/black-bin/view-1-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0140_00/black-bin/view-1-highlight.webp"
+            },
+            {
+              "id": "view-2",
+              "label": {
+                "en": "View 2"
+              },
+              "rgb": "./static/examples/scenes/scene0140_00/black-bin/view-2-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0140_00/black-bin/view-2-highlight.webp"
+            },
+            {
+              "id": "view-3",
+              "label": {
+                "en": "View 3"
+              },
+              "rgb": "./static/examples/scenes/scene0140_00/black-bin/view-3-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0140_00/black-bin/view-3-highlight.webp"
+            }
+          ],
+          "video": {
+            "src": "./static/examples/method-videos-rgb/scene0140_00/black-bin.mp4",
+            "poster": "./static/examples/method-videos-rgb/scene0140_00/black-bin.webp",
+            "layout": "methods"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene0200_00",
+      "sceneId": "scene0200_00",
+      "title": {
+        "en": "Bedroom"
+      },
+      "queries": [
+        {
+          "id": "cabinet",
+          "label": {
+            "en": "Cabinet opposite the bed"
+          },
+          "text": {
+            "en": "the cabinet is on the wall opposite of the bed. the cabinet looks like a rectangular prism."
+          },
+          "views": [
+            {
+              "id": "view-1",
+              "label": {
+                "en": "View 1"
+              },
+              "rgb": "./static/examples/scenes/scene0200_00/cabinet/view-1-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0200_00/cabinet/view-1-highlight.webp"
+            },
+            {
+              "id": "view-2",
+              "label": {
+                "en": "View 2"
+              },
+              "rgb": "./static/examples/scenes/scene0200_00/cabinet/view-2-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0200_00/cabinet/view-2-highlight.webp"
+            },
+            {
+              "id": "view-3",
+              "label": {
+                "en": "View 3"
+              },
+              "rgb": "./static/examples/scenes/scene0200_00/cabinet/view-3-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0200_00/cabinet/view-3-highlight.webp"
+            }
+          ],
+          "video": {
+            "src": "./static/examples/method-videos-rgb/scene0200_00/scene0200_00-obj5-q20.mp4",
+            "poster": "./static/examples/method-videos-rgb/scene0200_00/scene0200_00-obj5-q20.webp",
+            "layout": "methods"
+          }
+        },
+        {
+          "id": "desk",
+          "label": {
+            "en": "Desk beside the bed"
+          },
+          "text": {
+            "en": "the desk is right of the bed and next to a cabinet. the desk is brown and rectangular."
+          },
+          "views": [
+            {
+              "id": "view-1",
+              "label": {
+                "en": "View 1"
+              },
+              "rgb": "./static/examples/scenes/scene0200_00/desk/view-1-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0200_00/desk/view-1-highlight.webp"
+            },
+            {
+              "id": "view-2",
+              "label": {
+                "en": "View 2"
+              },
+              "rgb": "./static/examples/scenes/scene0200_00/desk/view-2-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0200_00/desk/view-2-highlight.webp"
+            },
+            {
+              "id": "view-3",
+              "label": {
+                "en": "View 3"
+              },
+              "rgb": "./static/examples/scenes/scene0200_00/desk/view-3-rgb.webp",
+              "highlight": "./static/examples/scenes/scene0200_00/desk/view-3-highlight.webp"
+            }
+          ],
+          "video": {
+            "src": "./static/examples/method-videos-rgb/scene0200_00/desk.mp4",
+            "poster": "./static/examples/method-videos-rgb/scene0200_00/desk.webp",
+            "layout": "methods"
+          }
+        }
+      ]
+    }
+  ]
+}
